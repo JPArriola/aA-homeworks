@@ -10,3 +10,11 @@ def sluggish_oct(arr)
     return fish1 if max_length == true
   end
 end
+
+tiles_arr = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
+
+def slow_dance(direction, tiles_arr)
+  tiles_arr.each_with_index do |tile, idx|
+    return idx if tile == direction
+  end
+end
